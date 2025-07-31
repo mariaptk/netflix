@@ -1,0 +1,22 @@
+USE DATABASE NETFLIX;
+    USE SCHEMA PUBLIC;
+
+TRUNCATE TABLE TITLE_DIRECTOR;
+
+INSERT INTO TITLE_GENRE (show_id, genre_id)
+SELECT DISTINCT
+    f.SHOW_ID,
+    d.genre_id
+FROM
+    FULLINFO f
+JOIN
+    GENRES d ON TRIM(LOWER(f."GENRE")) = TRIM(LOWER(d.genre))
+WHERE
+    f."GENRE" IS NOT NULL
+    AND f."GENRE" != 'Unknown'
+    AND f."GENRE" != 'null'
+    AND NOT EXISTS (
+        SELECT 1 FROM TITLE_GENRE td
+        WHERE td.show_id = f.SHOW_ID
+        AND td.genre_id = d.genre_id
+    );

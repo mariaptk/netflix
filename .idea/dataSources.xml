@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="NETFLIX@CVMXNYU-OU75109.snowflakecomputing.com" uuid="9b30c06c-8aff-4433-855d-43d6781764b9">
+      <driver-ref>snowflake</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.snowflake.client.jdbc.SnowflakeDriver</jdbc-driver>
+      <jdbc-url>jdbc:snowflake://CVMXNYU-OU75109.snowflakecomputing.com:443?warehouse=COMPUTE_WH&amp;db=NETFLIX</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
