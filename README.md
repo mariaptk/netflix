@@ -5,18 +5,29 @@ This project demonstrate core Data Analyst skills using Python (Pandas), Snowfla
 The goal is to design a clean and normalized data model, load it into Snowflake, and build analytical views for further visual exploration in Power BI.
 
 ## Project Structure
-netflix2_0/ 
-├── data/ # Source CSV files 
-├── py/ # Jupyter notebooks for data cleaning 
-│ └── cleaning.ipynb
-├── snowflake/
-│ ├── data_load/ # SQL scripts for loading data into Snowflake
-│ └── snowflake_schema.sql # Schema definition
-├── powerBI/ # Power BI reports and exported visuals
-│ ├── netflix_model.pbix
-│ └── netflix_model.pdf
-├── requirements.txt # Python dependencies
-└── README.md # Project overview and documentation
+```text
+netflix2_0/
+│
+├── data/                   # Data directories
+│   ├── processed/          # Cleaned and transformed data
+│   └── raw/                # Original raw data files
+│
+├── models/                 # Machine learning models (if applicable)
+│
+├── powerBI/                # Power BI assets
+│   ├── netflix_model.pbix  # Main Power BI report file
+│   └── netflix_model.pdf   # Exported PDF version
+│
+├── cleaning.ipynb      # Data cleaning notebook
+│
+├── snowflake/              # Snowflake database scripts
+│   ├── data_load/          # Data loading scripts
+│   ├── snowflake_schema.sql # Database schema definition
+│   └── views.sql           # Analytical views definitions
+│
+├── LICENSE                 # Project license
+├── README.md               # Project documentation
+└── requirements.txt        # Python dependencies
 
 ## Data Model in Snowflake
 
@@ -65,4 +76,5 @@ This project demonstrates the ability to:
 - Model and manage data in a cloud-based DWH (Snowflake)
 - Create reusable analytical views for reporting
 - Derive insights using visual analytics
+
 
