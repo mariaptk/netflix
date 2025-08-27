@@ -28,6 +28,7 @@ netflix2_0/
 ├── LICENSE                 # Project license
 ├── README.md               # Project documentation
 └── requirements.txt        # Python dependencies
+```
 
 ## Data Model in Snowflake
 
@@ -76,5 +77,6 @@ This project demonstrates the ability to:
 - Model and manage data in a cloud-based DWH (Snowflake)
 - Create reusable analytical views for reporting
 - Derive insights using visual analytics
+
 
 
