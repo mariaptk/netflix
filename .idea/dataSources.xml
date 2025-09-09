@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="NETFLIX@CVMXNYU-OU75109.snowflakecomputing.com" uuid="9b30c06c-8aff-4433-855d-43d6781764b9">
+    <data-source source="LOCAL" name="Netflix" uuid="79a3ff98-eccf-4041-a12b-f0c1747f3cd8">
       <driver-ref>snowflake</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>net.snowflake.client.jdbc.SnowflakeDriver</jdbc-driver>
